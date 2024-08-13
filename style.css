@@ -1,0 +1,146 @@
+body {
+  font-family: sans-serif;
+  background-color: #063d1db9;
+  margin: 0;
+  padding: 0;
+  
+}
+.background{
+  background-image: url(./Pakistan-l.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: -2rem;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+.bg-overlay{
+  background-color: #020d06cf;
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: blur(20px);
+}
+.texts{
+  width: 100%;
+  color: #18ba02;
+  z-index: 10;
+  text-transform: uppercase;
+  font-size: 90%;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  align-items: center;
+  justify-content: center;
+}
+.texts h1{
+  margin-bottom: -0.1rem;
+}
+.texts h2{
+  padding: 0;
+  margin: 0;
+  margin-top: 0.5rem;
+}
+.texts a{
+  text-decoration: none;
+  font-style: normal;
+  list-style: none;
+  margin-left: 1.5rem;
+}
+
+.texts a i{
+  color: #18ba02;
+  font-size: 1.5rem;
+  transition: .5s all ease-in-out;
+}
+.texts a i:hover{
+  color: white;
+}
+.icons{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  color: white;
+}
+
+footer p{
+  color: white;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+footer p span{
+  color: #18ba02;
+}
+span{
+  color: white;
+}
+#container {
+  position: fixed;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -40%);
+  display: flex;
+}
+
+#pole {
+  width: 10px;
+  height: 500px;
+  border-radius: 50px;
+  background-color: rgb(90, 176, 84);
+  box-shadow: -5px 0 3px inset rgba(203, 252, 203, 0.835)
+}
+
+.flag-unit {
+  width: 5px;
+  height: 5px;
+  background: #18ba02;
+  animation: vertical 1s infinite;
+  box-shadow: 5px 15px 10px rgba(255, 255, 255, 0.1);
+}
+
+#pole, .column {
+  transform-origin: bottom;
+  animation: sway 5s infinite;
+}
+
+#flag {
+  display: flex;
+}
+
+@keyframes vertical {
+  0%, 100% {
+    transform: translate(0, 0);
+  }
+
+  25% {
+    transform: translate(calc(var(--displacement)*-2), calc(var(--displacement)*-1));
+  }
+
+  75% {
+    transform: translate(calc(var(--displacement)*2), calc(var(--displacement)*4));
+  }
+
+}
+
+@keyframes sway {
+  0%, 100% {
+    transform: rotate(-5deg)
+  }
+
+  50% {
+    transform: rotate(-3deg)
+  }
+}
+
+footer{
+  position: fixed;
+  right: 1em;
+  bottom: 1em;
+  color:white;
+}
+
+footer a{
+  color:white;
+}
