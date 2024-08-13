@@ -1,3 +1,10 @@
+setTimeout(() => {
+  document.getElementById('loader').style.display = 'none';
+  document.getElementById('loader-bg').style.display = 'none';
+  document.getElementById('content').style.display = 'block';
+  document.getElementById('content').style.display = 'block';
+}, 5000); 
+
 const flagEl = document.getElementById("flag");
 
 const rows = 50;
